@@ -6,7 +6,7 @@ This project is an **interactive demo application** for building, exploring, and
 * **[Faker](https://faker.readthedocs.io/)** — generate dummy people and company data.
 * **[Streamlit](https://streamlit.io/)** — interactive web interface.
 * **[PyVis](https://pyvis.readthedocs.io/)** — graph visualization.
-* **[OpenAI API](https://platform.openai.com/)** — optional natural language to SPARQL conversion.
+* **[OpenAI API](https://platform.openai.com/)** — optional natural language to SPARQL conversion(you can use any model at your convinence).
 
 ![Streamlit app](image-1.png)
 
@@ -17,6 +17,8 @@ You can:
 * See query results automatically in a table after every query.  
 * Visualize the graph interactively in the browser.  
 * Ask questions in natural language and convert them into SPARQL queries.
+
+This demonstrates building RDF and interacting with graph databases with SPARQL and converting natural language to querying.
 
 ---
 
@@ -41,8 +43,8 @@ You can:
 KG/
 ├─ src/
 │  ├─ app.py             # Main Streamlit application
-│  ├─ data\_builder.py    # Builds the dummy RDF graph with Faker
-│  ├─ sparql\_service.py  # Executes SPARQL queries (handles SELECT/UPDATE/INSERT/DELETE)
+│  ├─ data_builder.py    # Builds the dummy RDF graph with Faker
+│  ├─ sparql_service.py  # Executes SPARQL queries (handles SELECT/UPDATE/INSERT/DELETE)
 │  ├─ visualizer.py      # Graph visualization using PyVis
 │  └─ nl2sparql.py       # Converts natural language questions into SPARQL
 ├─ requirements.txt       # Python dependencies
@@ -103,7 +105,7 @@ KG/
 
 ```bash
 git clone <your-repo-url>
-cd KG
+cd repo-name
 ````
 
 ### 2. Create virtual environment
