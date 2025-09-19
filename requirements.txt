@@ -1,0 +1,7 @@
+streamlit
+rdflib
+Faker
+pyvis
+networkx
+dotenv
+openai
